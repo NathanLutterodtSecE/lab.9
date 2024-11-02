@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+    <section class="filters">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="architecture">Architecture</button>
+        <button class="filter-btn" data-category="animals">Animals</button>
+    </section>
+    <section class="gallery">
+        <!-- Nature Category -->
+        <div class="image-container" data-category="nature">
+            <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=2210&quality=70" alt="Nature 1">
+        </div>
+        <div class="image-container" data-category="nature">
+            <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg" alt="Nature 2">
+        </div>
+        <div class="image-container" data-category="nature">
+            <img src="https://t4.ftcdn.net/jpg/05/47/97/81/360_F_547978128_vqEEUYBr1vcAwfRAqReZXTYtyawpgLcC.jpg" alt="Nature 3">
+        </div>
+        
+        <!-- Architecture Category -->
+        <div class="image-container" data-category="architecture">
+            <img src="https://parametric-architecture.com/wp-content/uploads/2023/05/Tim-Fu_AI-1.jpg" alt="Architecture 1">
+        </div>
+        <div class="image-container" data-category="architecture">
+            <img src="https://api.gharpedia.com/wp-content/uploads/2019/02/Heydar-Aliyev-Cultural-Centre-by-Zaha-Hadid-01-0101070001.jpg" alt="Architecture 2">
+        </div>
+        <div class="image-container" data-category="architecture">
+            <img src="https://www.digitalschool.ca/wp-content/uploads/2021/07/inovative-buildings-architecture-students-2.jpg" alt="Architecture 3">
+        </div>
+        
+        <!-- Animals Category -->
+        <div class="image-container" data-category="animals">
+            <img src="https://www.timeforkids.com/wp-content/uploads/2023/11/G3G5_231117_bear_steps.jpg?w=1024" alt="Animals 1">
+        </div>
+        <div class="image-container" data-category="animals">
+            <img src="https://media.wired.com/photos/65caa6f6f553745750c04769/master/w_2560%2Cc_limit/elephant-congo-science-GettyImages-630005418.jpg" alt="Animals 2">
+        </div>
+        <div class="image-container" data-category="animals">
+            <img src="https://nationalzoo.si.edu/sites/default/files/styles/wide/public/newsroom/20190226-bridgetisrael08.jpg?h=41919c3d&itok=sutqDrPi" alt="Animals 3">
+        </div>
+    
+        <!-- Additional categories or images can be added similarly -->
+    </section>
+    
+        <!-- More images with different categories -->
+    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
